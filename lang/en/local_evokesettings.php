@@ -14,10 +14,11 @@ $string['pluginname'] = 'Evoke Settings';
 
 $string['coursesettings'] = 'Evoke course settings';
 $string['coursemenuitems'] = 'Course menu items';
-$string['coursemenuitems_help'] = 'Additional menu items be added here. Enter each menu item on a new line with format: menu text, a link URL, and a uniquekey(only letter). For example:
+$string['coursemenuitems_help'] = 'Additional menu items be added here. Enter each menu item on a new line with format: menu text and a link URL. For example:
 <pre>
-Announcements|/course/|announcements
-Team chat|/mod/chat/view.php?id=2|teamchat
-Course forum|/mod/forum/view.php?id=3|courseforum
+Announcements|/course/
+Team chat|/mod/chat/view.php?id=2
+Course forum|/mod/forum/view.php?id=3
 </pre>';
 $string['pages'] = 'Evoke pages';
+$string['coursesettings_success'] = 'Course settings successfully saved.';

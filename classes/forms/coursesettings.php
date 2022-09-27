@@ -10,6 +10,9 @@ class coursesettings extends \moodleform {
     protected function definition() {
         $mform = $this->_form;
 
+        $mform->addElement('hidden', 'courseid', $this->_customdata['courseid']);
+        $mform->setType('courseid', PARAM_INT);
+
         $mform->addElement('textarea', 'coursemenuitems', get_string('coursemenuitems', 'local_evokesettings'), 'wrap="virtual" rows="10" cols="100"');
         $mform->setType('coursemenuitems', PARAM_RAW);
         $mform->addHelpButton('coursemenuitems','coursemenuitems',  'local_evokesettings');
