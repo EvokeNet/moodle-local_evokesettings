@@ -22,3 +22,22 @@ Course forum|/mod/forum/view.php?id=3
 </pre>';
 $string['pages'] = 'Evoke pages';
 $string['coursesettings_success'] = 'Course settings successfully saved.';
+
+$string['actions'] = 'Actions';
+$string['page_create'] = 'Create page';
+$string['page_title'] = 'Page title';
+$string['page_slug'] = 'Page slug';
+$string['page_showonmenu'] = 'Show on menu?';
+$string['page_content'] = 'Page content';
+
+$string['validation:minlen'] = 'This field needs to have at least {$a} characters.';
+
+$string['confirm_yes'] = 'Yes, I wanna it!';
+$string['confirm_no'] = 'Cancel';
+
+$string['createitem_success'] = 'Item successfuly created';
+$string['updateitem_success'] = 'Item successfuly updated';
+$string['deleteitem_success'] = 'Item successfuly deleted';
+
+$string['deleteitem_confirm_title'] = 'Are you sure?';
+$string['deleteitem_confirm_msg'] = 'Once deleted, this item cannot be recovered!';
