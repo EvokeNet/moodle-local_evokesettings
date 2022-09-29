@@ -11,7 +11,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_evokesettings';
-$plugin->release = '0.1.0';
-$plugin->version = 2022072100;
+$plugin->release = '1.0.0';
+$plugin->version = 2022092900;
 $plugin->requires = 2022041200;
 $plugin->maturity = MATURITY_STABLE;
