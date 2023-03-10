@@ -16,7 +16,7 @@ use core\event\base as baseevent;
 
 class redirect {
     public static function observer(baseevent $event) {
-        global $USER;
+        global $USER, $CFG;
 
         if (is_siteadmin()) {
             return;
@@ -28,6 +28,12 @@ class redirect {
             if ($data['courseid'] > 1) {
                 return;
             }
+        }
+
+        if ($event instanceof \core\event\user_loggedout) {
+            $encodedredirecturi = urlencode($CFG->wwwroot);
+
+            return redirect(new \moodle_url("https://auth.evokenet.org/auth/realms/evoke/protocol/openid-connect/logout?redirect_uri={$encodedredirecturi}"));
         }
 
         $courses = enrol_get_all_users_courses($USER->id);

@@ -26,4 +26,9 @@ $observers = [
         'callback' => '\local_evokesettings\observers\redirect::observer',
         'internal' => false
     ],
+    [
+        'eventname' => '\core\event\user_loggedout',
+        'callback' => '\local_evokesettings\observers\redirect::observer',
+        'internal' => false
+    ],
 ];
