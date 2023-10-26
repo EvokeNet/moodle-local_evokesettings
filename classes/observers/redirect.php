@@ -45,7 +45,11 @@ class redirect {
                 $issuer = $DB->get_record_sql("SELECT * FROM {oauth2_issuer} WHERE baseurl like '%evokenet%'");
 
                 if (!$issuer) {
-                    return;
+                    $issuer = $DB->get_record_sql("SELECT * FROM {oauth2_issuer} WHERE baseurl like '%wbedpolicyacademy%'");
+
+                    if (!$issuer) {
+                        return;
+                    }
                 }
 
                 $encodedredirecturi = urlencode($CFG->wwwroot);
